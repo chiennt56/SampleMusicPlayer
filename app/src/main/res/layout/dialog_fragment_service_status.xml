@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/btnStartService"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_more_action"
+        android:text="Start Service" />
+
+    <Button
+        android:id="@+id/btnStopService"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btnStartService"
+        android:background="@drawable/bg_more_action"
+        android:text="Stop Service" />
+
+</RelativeLayout>

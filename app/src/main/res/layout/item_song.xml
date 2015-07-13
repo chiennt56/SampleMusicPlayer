@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imgSongThumb"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_song_thumb" />
+
+    <RelativeLayout
+        android:id="@+id/rlvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imgSongThumb"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="Khong the tin noi"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/song_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/song_title"
+            android:lines="1"
+            android:text="Nguyen Tu Quang"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
